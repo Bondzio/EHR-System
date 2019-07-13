@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^Index/$', view.home, name='home'),
     url(r'^logout/$', view.patientLogout, name='logout'),
     url(r'^patientProfile/$', view.patient_profile, name='patient_profile'),
+    url(r'^patientProfileUpdate/$', view.patient_profile_update, name='patient_profile_update'),
     # url(r'^patientProfileView/$', view.patient_profile_view, name='patient_profile_view'),
     url(r'^patientProfileView/(?P<pk>[-\w]+)/$',view.patientProfileDetialView.as_view(), name='patientProfileView'),
     url(r'^signup/$', view.temp_Register, name='signup'),
@@ -23,7 +24,12 @@ urlpatterns = [
     url(r'^patientDoctor/$', view.patientDoctor, name='patientDoctor'),
     url(r'^QRScan/$', view.QRCodeScanView, name='QRCodeScanView'),
     url(r'^forgetPassword/(?P<uid>[-\w]+)/$', view.forget_password, name='forget_password'),
+    # url(r'^Notification',view.Notification, name='notification'),
+    url(r'^DoctorRate/(?P<userid>[-\w]+)/(?P<patid>[-\w]+)/(?P<hosid>[-\w]+)/',view.doctorRate, name='doctorRate'),
+    url(r'^OrganizationRate/(?P<orgid>[-\w]+)/(?P<patid>[-\w]+)/',view.organizationRate, name='organizationRate'),
+    url(r'^aboutUs/$',view.aboutUs, name='aboutUs'),
 
+    url(r'^getReport/(?P<report_id>\w+)/$', view.getReport, name='getReport'),
 
 ]
 if settings.DEBUG:
