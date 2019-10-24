@@ -1,0 +1,30 @@
+pytz # https://github.com/stub42/pytz
+Pillow  # https://github.com/python-pillow/Pillow
+bcrypt  # https://github.com/pyca/bcrypt
+qrcode  # https://github.com/lincolnloop/python-qrcode
+opencv-python  # https://github.com/skvark/opencv-python
+pyzbar  # https://github.com/NaturalHistoryMuseum/pyzbar
+markdown  # https://github.com/Python-Markdown/markdown
+sklearn  # https://github.com/scikit-learn/scikit-learn
+feedparser  # https://github.com/kurtmckee/feedparser
+
+# Django
+# ------------------------------------------------------------------------------
+django==2.0.5 # pyup: < 3.0  # https://www.djangoproject.com/
+django-allauth  # https://github.com/pennersr/django-allauth
+django-crispy-forms  # https://github.com/django-crispy-forms/django-crispy-forms
+django-redis # https://github.com/niwinz/django-redis
+django-filter  # https://github.com/carltongibson/django-filter
+django[argon2]  # https://github.com/hynek/argon2-cffi
+django-mysql  # https://github.com/adamchainz/django-mysql
+mysqlclient  # https://github.com/PyMySQL/mysqlclient-python
+
+# Django REST Framework
+djangorestframework  # https://github.com/encode/django-rest-framework
+coreapi # https://github.com/core-api/python-client
+
+django-rest-knox #http://james1345.github.io/django-rest-knox/installation/
+django-rest-auth  #https://django-rest-auth.readthedocs.io/en/latest/installation.html
+
+#fontawesome
+django-fontawesome  #https://fontawesome.com/
